@@ -1,0 +1,11 @@
+.header{
+  background-image: -webkit-linear-gradient(top,#454545 0%,#333 100%);
+  background-image: linear-gradient(to bottom,#454545 0%,#333 100%);
+  -webkit-box-shadow: 0 0 1px #000;
+  -moz-box-shadow: 0 0 1px #000;
+  box-shadow: 0 0 1px #000;
+
+  height:5rem;
+  margin-bottom:2rem;
+  color:white;
+}

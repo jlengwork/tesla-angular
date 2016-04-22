@@ -1,0 +1,45 @@
+.jumbo-car-img{
+  background-image: url("/assets/images/car-mountains.jpg");
+  background-size: cover;
+  height:30rem;
+}
+
+.section-subtitle {
+  font-style: normal;
+  font-family: "Gotham A","Gotham B","M Hei PRC W45","M Hei HK W42","M Hei HK W40","HelveticaNeue-Regular","Helvetica Neue Regular","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 30px;
+  line-height: 35px;
+  font-size: 1.875rem;
+  line-height: 2.1875rem;
+  font-weight: 300;
+  text-shadow: rgba(0,0,0,0.5) 0 1px 1px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  position:relative;
+  top:-12rem;
+  color: #fff;
+}
+.form-label, .control-label {
+  font-style: normal;
+  font-family: "Gotham A","Gotham B","M Hei PRC W45","M Hei HK W42","M Hei HK W40","HelveticaNeue-Regular","Helvetica Neue Regular","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 15px;
+  /*font-size: 0.6875rem;*/
+  line-height: 0.9375rem;
+  padding-bottom: 5px;
+  padding-bottom: 0.3125rem;
+  display: block;
+  text-transform: uppercase;
+  position: relative;
+  cursor: pointer;
+  color: gray;
+}
+
+.custom-row{
+}
+.custom-row:after {
+  clear: both;
+}

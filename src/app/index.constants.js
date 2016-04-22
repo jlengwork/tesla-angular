@@ -5,6 +5,13 @@
   angular
     .module('teslaAngular')
     .constant('malarkey', malarkey)
-    .constant('moment', moment);
+    .constant('moment', moment)
+    .constant('LOCALES', {
+      'locales': {
+        'es_MX': 'Español',
+        'en_US': 'English'
+      },
+      'preferredLocale': 'en_US'
+    });
 
 })();

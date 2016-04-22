@@ -7,6 +7,8 @@
 
   /** @ngInject */
   function routerConfig($stateProvider, $urlRouterProvider) {
+    $urlRouterProvider.when('/', '/login');
+
     $stateProvider.state('home', {
         url: '/yoman',
         templateUrl: 'app/main/main.html',
@@ -15,8 +17,18 @@
       });
 
     $stateProvider.state('login',{
-      url: '/',
-      templateUrl: ''
+      url: '/login',
+      templateUrl: 'app/views/login/login.tpl.html'
+    });
+
+    $stateProvider.state('entry',{
+      url: '/entry',
+      templateUrl: 'app/views/entry/entry.tpl.html'
+    });
+
+    $stateProvider.state('listing',{
+      url: '/listing',
+      templateUrl: 'app/views/listing/listing.tpl.html'
     });
 
     $urlRouterProvider.otherwise('/');

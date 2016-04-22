@@ -1,0 +1,59 @@
+
+  <div ng-controller="listing.ctrl as listingCtrl">
+
+    <nav class="navbar navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">TESLACOIL</a>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="table-responsive">
+              <table class="table table-condensed">
+                <thead>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Email</th>
+                  <th>Phone</th>
+                  <th>Zip</th>
+                  <th>Store Requested</th>
+                  <th>Time Requested</th>
+                  <th>Time Submitted</th>
+                </thead>
+                <tbody>
+                  <tr ng-repeat="item in listingCtrl.listitems">
+                    <td>
+                      {{item.firstname}}
+                    </td>
+                    <td>
+                      {{item.lastname}}
+                    </td>
+                    <td>
+                      {{item.email}}
+                    </td>
+                    <td>
+                      {{item.phone}}
+                    </td>
+                    <td>
+                      {{item.zip}}
+                    </td>
+                    <td>
+                      {{item.storeRequested}}
+                    </td>
+                    <td>
+                      {{item.timeRequested}}
+                    </td>
+                    <td>
+                      {{item.timeSubmitted}}
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+     </div>
+  </div>

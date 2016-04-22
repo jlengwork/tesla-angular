@@ -13,7 +13,12 @@
       'ui.router',
       'ui.bootstrap',
       'toastr',
-      'firebase'
+      'firebase',
+      'ui-notification',
+      'formly',
+      'formlyBootstrap',
+      'pascalprecht.translate',// angular-translate
+      'tmh.dynamicLocale'// angular-dynamic-locale
     ]);
 
 })();
