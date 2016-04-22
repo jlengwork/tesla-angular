@@ -1,0 +1,13 @@
+{
+  "views.firstName":"First Name",
+  "views.lastName":"Last Name",
+  "views.email":"Email",
+  "views.phone":"Phone",
+  "views.postalcode":"Zip Code",
+  "views.requestDate":"Date Requested",
+  "views.requestTime":"Time Requested",
+  "views.submitTime":"Time Submitted",
+  "views.location":"Location",
+
+  "directives.language-select.Language": "Language"
+}

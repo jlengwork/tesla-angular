@@ -121,7 +121,7 @@
         fieldGroup: [
           {
             className: "col-sm-6",
-            key: 'zip',
+            key: 'postalcode',
             type: 'input',
             templateOptions: {
               type: 'text',
@@ -144,7 +144,7 @@
         fieldGroup: [
           {
             className: "col-sm-6",
-            key: 'storeRequested',
+            key: 'location',
             type: 'input',
             templateOptions: {
               type: 'text',
@@ -158,7 +158,7 @@
           },
           {
             className: "col-sm-6",
-            key: 'dateRequested',
+            key: 'requestDate',
             type: 'datepicker',
             templateOptions: {
               type: 'text',
@@ -173,7 +173,7 @@
           },
           {
             className: "col-sm-6",
-            key: 'timeRequested',
+            key: 'requestTime',
             type: 'timepicker',
             templateOptions: {
               label: 'Time Requested',

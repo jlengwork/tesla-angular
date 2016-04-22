@@ -9,19 +9,24 @@
       </div>
     </nav>
     <div class="container">
+      <div class="row">
+        <div class="col-sm-4 col-sm-push-4">
+          <div ng-translate-language-select></div>
+        </div>
+      </div>
         <div class="row">
           <div class="col-xs-12">
             <div class="table-responsive">
               <table class="table table-condensed">
                 <thead>
-                  <th>First Name</th>
-                  <th>Last Name</th>
-                  <th>Email</th>
-                  <th>Phone</th>
-                  <th>Zip</th>
-                  <th>Store Requested</th>
-                  <th>Time Requested</th>
-                  <th>Time Submitted</th>
+                  <th>{{"views.firstName"|translate}}</th>
+                  <th>{{"views.lastName"|translate}}</th>
+                  <th>{{"views.email"|translate}}</th>
+                  <th>{{"views.phone"|translate}}</th>
+                  <th>{{"views.postalcode"|translate}}</th>
+                  <th>{{"views.location"|translate}}</th>
+                  <th>{{"views.requestTime"|translate}}</th>
+                  <th>{{"views.submitTime"|translate}}</th>
                 </thead>
                 <tbody>
                   <tr ng-repeat="item in listingCtrl.listitems">
@@ -38,16 +43,16 @@
                       {{item.phone}}
                     </td>
                     <td>
-                      {{item.zip}}
+                      {{item.postalcode}}
                     </td>
                     <td>
-                      {{item.storeRequested}}
+                      {{item.location}}
                     </td>
                     <td>
-                      {{item.timeRequested}}
+                      {{item.requestTime | date : 'medium'}}
                     </td>
                     <td>
-                      {{item.timeSubmitted}}
+                      {{item.submitTime | date : 'medium'}}
                     </td>
                   </tr>
                 </tbody>

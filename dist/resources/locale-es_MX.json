@@ -1,0 +1,13 @@
+{
+  "views.firstName":"NOMBRE",
+  "views.lastName":"APELLIDO",
+  "views.email":"CORREO ELECTRÓNICO",
+  "views.phone":"NÚMERO DE TELÉFONO",
+  "views.postalcode":"CÓDIGO POSTAL",
+  "views.requestDate":"fecha solicitada",
+  "views.requestTime":"tiempo solicitado",
+  "views.submitTime":"tiempo de envío",
+  "views.location":"ubicación",
+
+  "directives.language-select.Language": "Idioma"
+}
