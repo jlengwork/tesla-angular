@@ -9,5 +9,13 @@
   "views.submitTime":"Time Submitted",
   "views.location":"Location",
 
+  "views.entry.form.viewtitle":"Schedule an Appointment",
+  "views.entry.form.login":"Login",
+
+  "views.entry.complete.viewtitle":"Thank you!",
+  "views.entry.complete.viewtext":" Someone will be in contact with you to finalize your appointment.",
+  "views.entry.complete.submitanother":"Submit another request",
+
+
   "directives.language-select.Language": "Language"
 }

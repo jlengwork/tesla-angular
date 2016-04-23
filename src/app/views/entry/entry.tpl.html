@@ -1,38 +1,21 @@
-<img src="/assets/images/car-mountainsbw.jpg" width="100%"/>
-
-<div ng-controller="entry.ctrl as entryCtrl">
-
+<div class="entry-main">
   <div class="container">
+    <div  class="row-spacer"></div>
     <div class="row">
-      <div class="col-sm-4 col-sm-push-4">
-        <div ng-translate-language-select></div>
+      <div class="pull-right">
+        <a ui-sref="login" class="btn btn-primary">{{"views.entry.form.login"|translate}}</a>
       </div>
     </div>
-    <div class="row">
-      <div class="col-sm-8 col-sm-push-2">
-        <div class="section-subtitle">
-          <h1>Schedule an Appointment</h1>
-        </div>
-        <form novalidate ng-submit="entryCtrl.submit()" name="entryCtrl.entryForm">
-          <div class="row">
-            <formly-form model="entryCtrl.entry"
-                         fields="entryCtrl.entryFields"
-                         form="entryCtrl.entryForm"
-                          options="entryCtrl.options">
-              <div class="row">
-                <div class="col-sm-4 col-sm-push-7">
-                  <button type="submit"
-                          class="btn btn-primary btn-block">
-                    Submit
-                  </button>
-                </div>
-              </div>
-            </formly-form>
-
-          </div>
-
-        </form>
+  </div>
+  <div>
+  <div class="container">
+    <div class="vertical-align">
+    <div class="panel entry-panel">
+      <div class="panel-body">
+        <ui-view></ui-view>
       </div>
     </div>
+    </div>
+  </div>
   </div>
 </div>

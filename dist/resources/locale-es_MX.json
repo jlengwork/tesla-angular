@@ -9,5 +9,12 @@
   "views.submitTime":"tiempo de envío",
   "views.location":"ubicación",
 
+  "views.entry.form.viewtitle":"Agendar una cita de trabajo",
+  "views.entry.form.login":"Iniciar sesión",
+
+  "views.entry.complete.viewtitle":"¡Gracias!",
+  "views.entry.complete.viewtext":"Alguien se pondrá en contacto con usted para finalizar su cita ",
+  "views.entry.complete.submitanother":"Presentar otra solicitud",
+
   "directives.language-select.Language": "Idioma"
 }

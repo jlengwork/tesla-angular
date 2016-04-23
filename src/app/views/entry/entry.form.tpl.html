@@ -1,0 +1,38 @@
+<div ng-controller="entry.ctrl as entryCtrl" >
+<div class="row">
+  <div class="col-sm-8 col-sm-push-2">
+    <div class="section-subtitle">
+      <h1>{{"views.entry.form.viewtitle"|translate}}</h1>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-4 col-sm-push-4">
+    <div ng-translate-language-select></div>
+  </div>
+</div>
+<div  class="row-spacer"></div>
+<div class="row">
+  <div class="col-sm-8 col-sm-push-2">
+    <form novalidate ng-submit="entryCtrl.submit()" name="entryCtrl.entryForm">
+      <div class="row">
+        <formly-form model="entryCtrl.entry"
+                     fields="entryCtrl.entryFields"
+                     form="entryCtrl.entryForm"
+                     options="entryCtrl.options">
+          <div class="row">
+            <div class="col-sm-4 col-sm-push-7">
+              <button type="submit"
+                      class="btn btn-primary btn-block">
+                Submit
+              </button>
+            </div>
+          </div>
+        </formly-form>
+
+      </div>
+
+    </form>
+  </div>
+</div>
+</div>

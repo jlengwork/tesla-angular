@@ -1,8 +1,8 @@
 (function () {
   angular.module('teslaAngular').controller('entry.ctrl', ctrlFn);
 
-  ctrlFn.$inject = ['$firebaseArray', '$log', 'Notification','$filter', '$rootScope'];
-  function ctrlFn($firebaseArray, $log, Notification,$filter, $rootScope) {
+  ctrlFn.$inject = ['$firebaseArray', '$log', 'Notification','$filter', '$rootScope','$state'];
+  function ctrlFn($firebaseArray, $log, Notification,$filter, $rootScope,$state) {
     var vm = this;
     var ref = new Firebase('https://blistering-inferno-7880.firebaseIO.com/listitems');
     vm.listitems = $firebaseArray(ref);
@@ -30,6 +30,7 @@
           vm.entry.timeSubmitted = new Date();
         }
         vm.listitems.$add(vm.entry);
+        $state.transitionTo('entry.complete');
       }
     }
 

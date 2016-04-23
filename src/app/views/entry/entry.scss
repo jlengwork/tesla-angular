@@ -1,8 +1,37 @@
 .jumbo-car-img{
-  background-image: url("assets/images/car-mountains.jpg");
+  background-image: url("../assets/images/car-mountains.jpg");
   background-size: cover;
   height:30rem;
 }
+
+.push-down{
+  height:50%;
+}
+
+.entry-main {
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:1500px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-image: url("../assets/images/car-mountainsbw.jpg");
+}
+
+.vertical-align {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+ display: flex;
+  align-items: center;
+}
+
 
 .section-subtitle {
   font-style: normal;
@@ -18,8 +47,7 @@
   margin-right: auto;
   text-align: center;
   position:relative;
-  top:-12rem;
-  color: #fff;
+  color: black;
 }
 .form-label, .control-label {
   font-style: normal;
@@ -42,4 +70,7 @@
 }
 .custom-row:after {
   clear: both;
+}
+.entry-panel{
+  //margin-top:50rem;
 }

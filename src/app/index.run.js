@@ -52,7 +52,7 @@
 
     formlyConfig.setType({
       name: 'datepicker',
-      templateUrl:  '/app/directives/datepicker.html',
+      templateUrl:  'app/directives/datepicker.html',
       wrapper: ['bootstrapLabel', 'bootstrapHasError'],
       defaultOptions: {
         ngModelAttrs: ngModelAttrs,

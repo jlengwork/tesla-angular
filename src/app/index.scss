@@ -15,6 +15,10 @@ $border-radius-small:       1px !default;
   background: #C00;
 }
 
+.row-spacer{
+  margin-bottom:2rem;
+}
+
 /**
  *  Do not remove the comments below. It's the markers used by wiredep to inject
  *  sass dependencies when defined in the bower.json of your dependencies
