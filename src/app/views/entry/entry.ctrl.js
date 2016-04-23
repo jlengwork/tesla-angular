@@ -23,12 +23,15 @@
     vm.submit = function(){
       // Make sure form is valid before saving it
       if (vm.entryForm.$valid) {
-        if (vm.entry.timeRequested != null){ //remember that double equals will try to convert it
-          vm.entry.dateRequested.setHours(vm.entry.timeRequested.getHours());
-          vm.entry.dateRequested.setMinutes(vm.entry.timeRequested.getMinutes());
-          vm.entry.timeRequested = vm.entry.dateRequested;
-          vm.entry.timeSubmitted = new Date();
+        if (vm.entry.requestTime != null){ //remember that double equals will try to convert it
+          vm.entry.requestDate.setHours(vm.entry.requestTime.getHours());
+          vm.entry.requestDate.setMinutes(vm.entry.requestTime.getMinutes());
+          vm.entry.requestTime = vm.entry.requestDate;
+        }else{
+          vm.entry.requestTime = vm.entry.requestDate;
         }
+        vm.entry.submitTime = (new Date()).getTime();
+        vm.entry.requestTime = vm.entry.requestTime.getTime();
         vm.listitems.$add(vm.entry);
         $state.transitionTo('entry.complete');
       }
