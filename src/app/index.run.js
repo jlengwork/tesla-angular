@@ -59,7 +59,8 @@
         templateOptions: {
           datepickerOptions: {
             format: 'MMMM dd, yyyy',
-            initDate: new Date()
+            initDate: new Date(),
+            "popup-placement":'top-left'
           }
         }
       },

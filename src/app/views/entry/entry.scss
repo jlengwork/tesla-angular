@@ -4,12 +4,8 @@
   height:30rem;
 }
 
-.push-down{
-  height:50%;
-}
-
 .entry-main {
-  position:fixed;
+  //position:fixed;
   top:0;
   left:0;
   width:100%;
@@ -71,6 +67,4 @@
 .custom-row:after {
   clear: both;
 }
-.entry-panel{
-  //margin-top:50rem;
-}
+
